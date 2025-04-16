@@ -5,71 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pratikum</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f5f3ef;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+      .hero-section {
+        background-color: #f5f3ef;
+        padding: 50px 0;
+      }
+      .hero-text h1 {
+        font-weight: 800;
+      }
+      .btn-dark-custom {
+        background-color: #4b4033;
+        color: white;
+      }
+      .item-title {
+        font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+     
+    </style>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Catalog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Special Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-          <a class="navbar-brand" href="#">Navbar</a>
-          
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-
-      <div class="p-5 bg-light">
-        <h1>Hello World</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <button type="button" class="btn btn-primary">Learn More »</button>
-      </div><br>
-
-      <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                <h2>Column 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim dui, blandit a consectetur vel, ullamcorper et urna. Morbi quis consectetur nibh. Nam interdum vitae risus eget imperdiet. Etiam pellentesque, lorem quis vehicula eleifend, elit libero venenatis justo, eget pulvinar ante nibh tempor nibh. Praesent viverra semper consectetur. Quisque sed quam sed nisi accumsan iaculis.</p>
-            </div>
-            <div class="col">
-                <h2>Column 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim dui, blandit a consectetur vel, ullamcorper et urna. Morbi quis consectetur nibh. Nam interdum vitae risus eget imperdiet. Etiam pellentesque, lorem quis vehicula eleifend, elit libero venenatis justo, eget pulvinar ante nibh tempor nibh. Praesent viverra semper consectetur. Quisque sed quam sed nisi accumsan iaculis.</p>
-            </div>
-            <div class="col">
-                <h2>Column 3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim dui, blandit a consectetur vel, ullamcorper et urna. Morbi quis consectetur nibh. Nam interdum vitae risus eget imperdiet. Etiam pellentesque, lorem quis vehicula eleifend, elit libero venenatis justo, eget pulvinar ante nibh tempor nibh. Praesent viverra semper consectetur. Quisque sed quam sed nisi accumsan iaculis.</p>
-            </div>
+  <section class="hero-section">
+    <div class="container">
+      <div class="row">
+        <!-- Gambar model besar -->
+        <div class="col-md-6">
+          <img src="https://cdnb.artstation.com/p/assets/images/images/010/834/965/large/sylvain-sarrailh-lostremains.jpg?1526477317" class="img-fluid" alt="model" />
         </div>
         
-
+        <!-- Teks koleksi baru -->
+        <div class="col-md-6 hero-text">
+          <h5>#SEASON01</h5>
+          <h1>NEW COLLECTION</h1>
+          <p>From apparel to sling bag, you can find various warm things here. Discover the real you with us!</p>
+          <button class="btn btn-dark-custom">READ MORE</button>
+          
+          <!-- Gambar item (3 kolom) -->
+          <div class="row mt-4">
+            <div class="col-4">
+              <img src="https://images.unsplash.com/photo-1681218424681-b4f8228ecea9?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="bag">
+              <p class="item-title">Roti Bang</p>
+            </div>
+            <div class="col-4">
+              <img src="pants.jpg" class="img-fluid" alt="pants">
+              <p class="item-title">FAUGET PANTS</p>
+            </div>
+            <div class="col-4">
+              <img src="shirt.jpg" class="img-fluid" alt="shirt">
+              <p class="item-title">FAUGET SHIRT</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+
 </body>
 </html>
